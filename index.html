@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Micro Fiction</title>
+    <meta robots="none">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cabin+Sketch&family=Codystar&family=Henny+Penny&family=Kranky&family=Libre+Franklin:wght@400;700&family=Mountains+of+Christmas&family=Palette+Mosaic&family=Press+Start+2P&family=Unkempt&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<link href='https://cdn.knightlab.com/libs/soundcite/latest/css/player.css' rel='stylesheet' type='text/css'><script type='text/javascript' src='https://cdn.knightlab.com/libs/soundcite/latest/js/soundcite.min.js'></script>		
+  </head>
+  <body>
+
+<section id="fade">
+<h2 class="soundcite" data-url="https://patriciabelen.github.io/microfiction/bbc_restaurant_07011341.mp3" data-start="0" data-end="180000" data-plays="1">Dinner</h2>
+	
+    <p>I find myself here again, sitting in the latest highbrow, <span class="palette">trendy</span> restaurant that I cannot afford, among clusters of <span class="kranky">hip New Yorkers</span> who waited weeks for this reservation. And I am listening. Listening as I have done for the last ten years. This time it’s the familiar story of how you quit another <span class="unkempt">perfectly</span> good job opportunity because: <p>
+
+<p><span class="press">a) you messed up</span><br>
+<span class="henny">b) you can’t get along with other people</span><br>
+<span class="cabin">c) you’re having major personal crisis</span><br>
+<span class="bangers">d) all of the above</span></p>
+<p>Actually, all of your stories, whether related to work or relationships, have the same multiple-choice ending. And I listen because that’s what <span class="mountains">friends</span> do. Especially your friends, of which there are few and far-between. I listen to every painstaking detail of every moment. I nod in agreement as I sip my <span class="codystar">$20 cocktail</span>. I barely say anything and even if I do, it goes unnoticed. </p>
+<p><span class="press">Dinner</span> arrives, a plate of something lovely yet forgettable. And the listening continues. I really do want to say, “I completely <span class="henny">disagree</span> with the way you handled the situation, you messed up, what’s wrong with you?” But I can’t bring myself to confront you in your vulnerable state. And therein lies the problem, you are always in a <span class="cabin">vulnerable</span> state. It takes a lot of emotional and mental strength to be your friend. I am not strong. In fact, eating this dinner I feel <span class="kranky">weak</span>, almost <span class="palette">nauseous</span>. Perhaps, I am the vulnerable one and you the strong one. You must be strong in some sense to cope with your self-made <span class="unkempt">crises</span>. Yes, that’s it! I am too vulnerable to deal with you. I shouldn’t be here. I will <span class="codystar">not</span> allow myself to be put in this position again. The check arrives. It sickens me that I have to lay down my credit card but I am comforted by the realization that this will be the <span class="bangers">last time</span>.</p>
+</section>
+
+
+
+
+<script>
+	
+	
+	var header = document.getElementById('fade');
+
+function fadeOutOnScroll(element) {
+	if (!element) {
+		return;
+	}
+	
+	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+	var elementHeight = element.offsetHeight;
+	var scrollTop = document.documentElement.scrollTop;
+	
+	var opacity = 1;
+	
+	if (scrollTop > distanceToTop) {
+		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+	}
+	
+	if (opacity >= 0) {
+		element.style.opacity = opacity;
+	}
+}
+
+function scrollHandler() {
+	fadeOutOnScroll(header);
+}
+
+window.addEventListener('scroll', scrollHandler);
+
+</script>
+  </body>
+</html>
